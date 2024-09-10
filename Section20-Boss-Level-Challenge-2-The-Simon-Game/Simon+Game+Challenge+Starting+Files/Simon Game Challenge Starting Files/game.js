@@ -13,6 +13,11 @@ audio.play();
 }
 
 
+$( ".btn" ).on( "click", function() {
+    var userChosenColour = $("#" + randomChosenColour);
+    console.log(userChosenColour);
+  });
+
 console.log(nextSequence());
 console.log(gamePattern);
 
