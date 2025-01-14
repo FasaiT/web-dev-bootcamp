@@ -1,4 +1,4 @@
-//to add fuction to ever buttons when click
+//to add fuction to every buttons when click
 
 //Detecting Button press
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;

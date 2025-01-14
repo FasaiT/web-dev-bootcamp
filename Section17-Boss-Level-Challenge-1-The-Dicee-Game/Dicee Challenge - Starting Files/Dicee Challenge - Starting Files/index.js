@@ -1,5 +1,5 @@
 var randomNumber1 = Math.floor(Math.random() * 6) + 1 ; //กำหนดค่าสุ่มตัวเลขตามที่มีบนลูกเต๋า 1-6
-var randomDiceImage = "dice" + randomNumber1 +".png" //กำหนดชื่อภาพที่จะใช้ โดยมาจาเลขสุ่มที่กำหนดจาก randomNumber1
+var randomDiceImage = "dice" + randomNumber1 +".png" //กำหนดชื่อภาพที่จะใช้ โดยมาจากเลขสุ่มที่กำหนดจาก randomNumber1
 var randomImageSource = "images/" + randomDiceImage; //กำหนด "แหล่งที่มาของรูปภาพ" จากไฟล์ + ชื่อภาพจาก randomDiceImage
 var image1 = document.querySelectorAll("img")[0]; //เปลี่ยนรูปภาพลูกเต๋า กำหนดเป็นตำแหน่งซ้าย
 image1.setAttribute("src", randomImageSource); //setAttribute src ในไฟล์ html 
