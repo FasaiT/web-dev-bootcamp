@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Letters</title>
+  </head>
+
+  <body>
+    <!-- Write your code here -->
+    <!-- ถ้ามีข้อมูล จำนวนตัวอักษรจากตัวแปรที่รับมาจากไฟล์ js ให้แสดงข้อความว่า There are * letters in your name.
+     แต่ถ้าไม่มีข้อมูล ให้แสดง Enter your name below -->
+     
+    <% if (locals.letterNum) { %> 
+      <!-- ใช้ locals เพื่อตรวจสอบและเข้าถึงตัวแปรทั้งหมดในไฟล์ js ที่ส่งมา -->
+    <h1>There are <%= letterNum %> letters in your name.</h1> 
+      <!-- letterNum คือ key ที่รับมาจาก index.js-->
+    <% } else { %>
+    <h1>Enter your name below</h1> 
+    <% } %>
+    <form action="/submit" method="POST">
+      <input type="text" name="fName" placeholder="First name" />
+      <input type="text" name="lName" placeholder="Last name" />
+      <input type="submit" value="OK" />
+    </form>
+  </body>
+</html>
