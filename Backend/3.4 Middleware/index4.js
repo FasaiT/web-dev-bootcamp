@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
+  // Optional: bandName = req.body["street"] + req.body["pet"];
   res.send(`<h1>Your band name is:</h1><h2>${bandName}✌️</h2>`);
 });
 
