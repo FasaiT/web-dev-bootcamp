@@ -201,7 +201,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  --webkit-appearance: button;
 }
 
 /**
@@ -293,7 +293,7 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+  --webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -392,9 +392,13 @@ img {
   background-color: #8aa7bc;
   color: #cdd7df;
   padding: 20px;
+  height: 100vh;
 }
 .my-background {
   font-size: 2.5rem;
+}
+.background-content-detail p {
+  font-size: 1.5rem;
 }
 .my-project {
   font-size: 2.5rem;
@@ -424,12 +428,13 @@ img {
   font-size: 1.3rem;
   padding: 10px;
 }
-a{
+a {
   text-decoration: none;
 }
 .a-custom {
   margin-top: auto;
 }
+
 .about-me,
 .my-contact {
   background-color: #cdd7df;
